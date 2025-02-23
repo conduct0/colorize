@@ -42,7 +42,6 @@ func parseMappings(mappingStr string) ([]LogColor, error) {
 }
 
 func main() {
-	// Custom usage message for better UX.
 	flag.Usage = func() {
 		fmt.Fprintf(os.Stderr, "Usage: %s [options]\n", os.Args[0])
 		fmt.Fprintln(os.Stderr, "Reads from stdin and colors log lines based on keyword mappings.")
@@ -59,7 +58,6 @@ func main() {
 		var err error
 		logColors, err = parseMappings(*mappingArg)
 		if err != nil {
-			// Warn the user but continue using the mappings that did parse.
 			fmt.Fprintln(os.Stderr, "Warning:", err)
 		}
 		if len(logColors) == 0 {
