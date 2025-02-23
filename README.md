@@ -1,6 +1,6 @@
 # Log Colorizer
 
-**Log Colorizer** is a simple command-line tool written in Go that reads log lines from standard input, detects keywords (such as ERROR, WARNING, INFO, etc.), and outputs colored log lines based on customizable mappings using 256-color ANSI escape codes.
+Log Colorizer is a simple command-line tool written in Go that reads log lines from standard input, detects keywords (such as ERROR, WARNING, INFO, etc.), and outputs colored log lines based on customizable mappings using 256-color ANSI escape codes.
 
 
 ## Default Mappings
